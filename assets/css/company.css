@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.sign-btn {
+  float: right;
+  margin-right: 70px;
+  text-transform: uppercase;
+}
+.signup,
+.login {
+  padding: 10px;
+  background-color: gray;
+  border: none;
+}
+.navbar {
+  display: flex;
+  margin: 10px 70px;
+  align-items: center;
+  justify-content: space-between;
+}
+.company-name,
+.nav-items {
+  margin: 0 50px;
+}
+.nav-items {
+  margin: 10px 70px;
+}
+.nav-items a {
+  margin: 20px;
+}
+a:active {
+  text-decoration: solid 2px black;
+}
+.hero {
+  text-align: center;
+  padding: 150px 50px 50px;
+  background-image: url(https://images.pexels.com/photos/15694815/pexels-photo-15694815.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load);
+  background-repeat: no-repeat;
+  background-size: cover;
+}

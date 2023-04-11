@@ -1,0 +1,17 @@
+.menu-bar {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: palegreen;
+}
+.menu-items a {
+  margin-right: 50px;
+}
+.menu-items a {
+  padding: 20px;
+}
+
+input {
+  width: 500px;
+}

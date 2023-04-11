@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS</title>
+    <style>
+      .container {
+        width: 400px;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        perspective: 800px;
+      }
+      .cube {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        transform-style: preserve-3d;
+        animation: cuberotate 10s linear infinite;
+      }
+      @keyframes cuberotate {
+      }
+      .cube > div {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        border: 2px solid;
+      }
+      .front {
+        background-color: blue;
+        transform: translateZ(100px);
+      }
+      .back {
+        background-color: black;
+        transform: translateZ(-100px);
+      }
+      .left {
+        background-color: rgb(0, 255, 21);
+        transform: rotateY("90deg") translateZ(100px);
+      }
+      .right {
+        background-color: rgb(255, 0, 0);
+        transform: rotateY("-90deg") translateZ(100px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="cube">
+        <div class="front"></div>
+        <div class="right"></div>
+        <div class="back"></div>
+        <div class="left"></div>
+        <div class="top"></div>
+        <div class="bottom"></div>
+      </div>
+    </div>
+  </body>
+</html>
